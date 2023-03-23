@@ -1,0 +1,12 @@
+/* footer */
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    opacity: 0.3;
+    font-size: 14px;
+  }
+  
+  footer img {
+    height: 50px;
+  }

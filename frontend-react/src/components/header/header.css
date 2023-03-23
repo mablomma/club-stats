@@ -1,0 +1,30 @@
+/* header */
+
+header {
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  
+  header .branding {
+    height: 48px;
+    margin-top: 10px;
+    display: flex;
+    transition: 0.2s;
+  }
+  
+  header .branding h1 {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #002339;
+  }
+  
+  header .branding h1 span {
+    font-weight: bold;
+  }
+  
+  header .branding:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  

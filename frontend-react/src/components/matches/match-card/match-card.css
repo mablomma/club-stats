@@ -1,0 +1,124 @@
+/* Match Card */
+
+.match-card {
+    background: #002339;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .match-card.mt-3 {
+    border-top: none;
+  }
+  
+  .match-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    background: #64C2FF;
+    transition: 0.1s;
+  }
+  
+  .match-card:hover::before {
+    height: 4px;
+  }
+  
+  .match-card:hover .btn.btn-link .fas {
+    transform: translateX(5px);
+  }
+  
+  .match-card .date {
+    width: 250px;
+  }
+  
+  .match-card .date .league-icon {
+    width: 24px;
+    margin-right: 20px;
+  }
+  
+  .match-card .teams {
+    display: flex;
+    min-height: 100%;
+    width: 60%;
+  }
+  
+  .match-card .teams .team {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 200px;
+  }
+  
+  .match-card .teams .team img {
+    height: 32px;
+    margin-left: 15px;
+  }
+  
+  .match-card .teams .team.team-away {
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  
+  .match-card .teams .team.team-away img {
+    width: 32px;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  
+  .match-card .teams .score {
+    display: flex;
+    background: linear-gradient(rgba(0, 118, 194, 0), rgba(0, 118, 194, 0.1), rgba(0, 118, 194, 0.8));
+    margin: 0 15px;
+    min-height: 100%;
+    align-items: center;
+  }
+  
+  .match-card .teams .score .score-number {
+    font-size: 17px;
+    width: 30px;
+    text-align: center;
+    transition: 0.1s;
+  }
+  
+  .match-card:hover .score-number {
+    color: #64C2FF;
+  }
+  
+  .match-card .teams .score .separator {
+    height: 20px;
+    width: 1px;
+    background: #fff;
+    opacity: 0.3;
+  }
+  
+  @media (max-width: 992px) {
+    .match-card .date .league-icon {
+      display: none;
+    }
+  
+    .match-card .teams .team span {
+      display: none;
+    }
+  
+    .match-card .teams {
+      width: auto;
+    }
+  
+    .match-card .teams .team {
+      width: auto;
+    }
+  
+    .match-card .date {
+      width: 20%;
+    }
+  }
+  

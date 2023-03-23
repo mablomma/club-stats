@@ -1,0 +1,129 @@
+/* player stats */
+
+.player-stats {
+    position: relative;
+  }
+  
+  .table-bordered, .table-bordered th, .table-bordered td{
+    border: 1px solid #F2F2F2 !important;
+  }
+  
+  .table-bordered {
+    border: none !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .player-stats .table {
+    background: #fff;
+    font-size: 13px;
+  }
+  
+  .player-stats table tr > *{
+    display: block;
+  }
+  .player-stats table tr {
+    display: table-cell;
+  }
+  
+  .player-stats table td, .player-stats table th {
+    width: 100px;
+  }
+  
+  .player-stats table td {
+    text-align: center;
+  }
+  
+  .player-stats table td:first-child, .player-stats table th:first-child {
+    height: 120px;
+  }
+  
+  .player-stats .player-name {
+    padding: 0 5px;
+    text-align: center;
+    line-height: 16px;
+  }
+  
+  .player-stats .player-name .image-holder {
+    border-bottom: 2px solid #F7F7F7;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .player-stats .player-name .player-image {
+    width: 100%;
+  }
+  
+  .player-stats .player-name .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+  }
+  
+  .player-stats .corner {
+    background: #EEEEEE;
+    width: 130px;
+  }
+  
+  .player-stats .categories th:not(.corner) {
+    background: #F8F8F8;
+    color: #64C2FF;
+    width: 130px;
+  }
+  
+  .player-stats .th-pie {
+    height: 64px;
+  }
+  
+  .player-stats .th-pass {
+    height: 84px;
+  }
+  
+  .player-stats .table-holder {
+    overflow-x: scroll;
+    border-right: 2px solid #F2F2F2;
+  }
+  
+  .player-stats .table-holder .table-heading-fixed {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 130px;
+    z-index: 1;
+  }
+  
+  .player-stats .goal-icon {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .player-stats .goal-icon img {
+    width: 100%;
+  }
+  
+  .player-stats .goal-icon span {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #afafaf;
+    background: #fff;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+  }
+  
+  .player-stats h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 10px;
+    margin: 0;
+    background: #fff;
+    border: 2px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+  }
